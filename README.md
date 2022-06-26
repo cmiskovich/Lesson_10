@@ -34,13 +34,9 @@ Jupyter Lab
 
 ## General information about analysis.
 
-The firts part of the project you pull only the pay pal data set and create a dataframe to visualize daily returns and then cumulative returns for pay pal.  The cumulative retruns shows a slight increase from 2017 to 2020. In the beginning of 2020 you see a drop but then a very strong rise in the cumulative returns for pay pal.  The next two steps involve pulling close amounts for pay pal over $200 and the top ten daily returns for pay pal.
 
-The second part you pull the daily returns for all four data sets and create a dataframe showing four coulmns of results.  You then get the average daily returns for the four datasets and create the etf_portfolio_returns dataset.  After that you annualize the returns and then produce a cumulative return dataset that you then create a visualization for the cumulative amounts.  The cumulative amounts are similiar to the pay pal visualizaiton.  Slight rise in 2017 and 2018 then fairly stable for 2019 with a drop early in 2020 followed by a sharp increase.
 
-The final part of the project was to deploy the notebook as a web application using Voila libray and it is attached below.
 
-[Voila](https://www.youtube.com/embed/PSxz_AhPqgA)
 
 
 
@@ -49,35 +45,61 @@ The final part of the project was to deploy the notebook as a web application us
 
 ## Information about datasets
 
-etf database contains four datasets:
+Data frame for crypto market data:
 
-GDOT, GS, PYPL, SQ
+df_market_data
 
-Data frame containing pay pal information:
+Data set using StandardScaler to normalize data:
 
-pypl_dataframe 
+scaled_data
 
-Paypal close prices higher than 200:
+Create a data frame with Scaled Data:
 
-pypl_higher_than_200
+df_market_data_scaled
 
-Top ten return values for Pay Pal:
+Create a data frame for the elbow curve plot:
 
-pypl_top_10_returns
+k, inertia, elbow data, df_elbow, df_elbow_plot
 
-Daily returns for all 4 data sets:
+Initalize K-Means and fit scaled data:
 
-etf_portfolio
+model
 
-Average returns for the four datasets:
+Predict clusters to group the cryptocurrencies:
 
-etf_portfolio_returns
+k_4
 
-Cumulative returns of the four datasets:
+Create data frame to display the results of the predictions:
 
-etf_cumulative_returns
+df_market_data_predictions
 
+Plot the data frame to visualize the results of predictions:
 
+df_market_data_predictions_plot
+
+Create a PCA data frame to reduce to three components:
+
+pca, market_pca_data, market_pca_df
+
+Create a data frame for the elbow curve plot for PCA data:
+
+k, inertia, elbow data_1, df_elbow_1, df_elbow_1_plot
+
+Initalize K-Means and fit scaled data for PCA data:
+
+model
+
+Predict clusters to group the cryptocurrencies for PCA data:
+
+k_4a
+
+Create data frame to display the results of the predictions for PCA data:
+
+market_pca_predictions_df
+
+Plot the data frame to visualize the results of predictions for PCA data:
+
+market_pca_predictions_df
 
 
 
@@ -88,13 +110,15 @@ etf_cumulative_returns
 
 pandas
 
-numpy
-
 hvplot
 
-SQLalchemy
+Path
 
+KMeans
 
+PCA
+
+StandardScaler
 
 ---
 
