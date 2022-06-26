@@ -1,7 +1,7 @@
 # Lesson_10
 # Primary application file
 
-Produce a Jupyter notebook A Jupyter notebook that contains analysis of an exchange traded fund (ETF) analyzyer. The analysis will be complete with professionally styled and formatted interactive visualizations. As well as deploy the notebook as a web application using teh Voilia library.
+Produce a Jupyter notebook that clusters cryptocurrencies by their performance in different time periods. You’ll then plot the results so that you can visually show the performance to the board.
 
 
 
