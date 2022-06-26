@@ -34,7 +34,13 @@ Jupyter Lab
 
 ## General information about analysis.
 
+First you need to  import the data (provided in the starter code) and prepare the data (provided in the starter code). After that you need to find the Best Value for k Using the Original Data.  Then you cluster cryptocurrencies with K-means Using the Original Data and optimize clusters with Principal Component Analysis.
 
+Then you will find the Best Value for k Using the PCA Data and cluster the cryptocurrencies with K-means using the PCA Data. Finally you visualize and compare the results.
+
+When comparing the results on the elbow curve, I still came up with 4 as the components to use but after optimizing the data using Principal Component Analysis the amount reduced significantly from 79.022 inertia to 49.665 inertia.  
+
+Also, comparing the scatter plots you notice that the grouping was much better compared to data without Principal Component Analysis applied to the data.
 
 
 
